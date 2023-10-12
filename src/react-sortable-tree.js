@@ -691,6 +691,7 @@ class ReactSortableTree extends Component {
           {({ height, width }) => (
             <ScrollZoneVirtualList
               {...scrollToInfo}
+              ref={this.props.ref}
               dragDropManager={dragDropManager}
               verticalStrength={this.vStrength}
               horizontalStrength={this.hStrength}
